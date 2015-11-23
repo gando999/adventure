@@ -12,7 +12,10 @@ class Controller(object):
         self.scene = scene_module.scene
 
     def main(self):
-        while self.scene.choices:  # or prettier: while not self.scene.is_terminal()?
+        while True:
+            if self.scene.is_terminal():
+                break
+
             # print self.scene.name
             # print
             print self.scene.description
@@ -36,6 +39,7 @@ class Controller(object):
 
             try:
                 self._import_scene(next)
+                return
             except ImportError:
                 print "An engineering error causes the ceiling to collapse! Try a different option."
 
