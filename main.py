@@ -25,7 +25,7 @@ class Controller(object):
 
             self._setup_next()
 
-        print
+        print self.scene.description
         print "THE END"
 
     def _setup_next(self):
