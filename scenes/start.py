@@ -1,4 +1,4 @@
-from adventure.scenes.sub_scene import SubScene
+from scenes.sub_scene import SubScene
 
 
 _description = "In the begining, we find ourselves faced with several choices"
