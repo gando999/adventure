@@ -1,6 +1,6 @@
-from adventure.base import Scene
+from adventure.base import BaseScene
 
-class SubScene(Scene):
+class SubScene(BaseScene):
     def __init__(self, description, choices):
         self.description = description
         self.choices = choices
