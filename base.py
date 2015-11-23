@@ -1,5 +1,5 @@
 
-class Scene(object):
+class BaseScene(object):
     def __init__(self, name, left, right):
         self.name = name
         self.choices = {'left': left, 'right': right}
